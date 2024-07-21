@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/layout/home/CardSection.home.tsx", "src/components/layout/home/CompareSection.home.tsx", "src/components/layout/home/Costumers.home.tsx", "src/components/layout/home/OfferSection.home.tsx"],
   "exclude": ["node_modules"]
 }
