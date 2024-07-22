@@ -8,7 +8,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 function WeServices() {
   return (
     <>
-    <div className="bg-zinc-50">
+    <div className="">
       <Wrapper className="py-12">
         <div className="flex flex-col w-full px-4 items-center justify-center mb-12">
           <div className="flex gap-2 flex-col justify-center text-center">
@@ -22,7 +22,7 @@ function WeServices() {
          
         </div>
 
-        <div className="flex flex-wrap max-w-[900px] mx-auto gap-x-2 gap-3 justify-center">
+        <div className="flex flex-wrap mx-auto gap-x-2 gap-3 justify-center">
           <>
             <div
               className="flex flex-col gap-4 

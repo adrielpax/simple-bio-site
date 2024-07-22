@@ -15,7 +15,7 @@ function CardSection() {
         >
           <div
             className="w-[290px] font-medium bg-white hover:translate-y-[-10px] 
-            relative hover:shadow-blue-200 hover:border-blue-500 
+            relative hover:shadow-blue-200 
             cursor-default transition-all ease-in-out items-center 
             h-[260px] shadow-md border rounded-lg p-4 font-sans"
           >
@@ -31,7 +31,7 @@ function CardSection() {
           </div>
           <div
             className="w-[290px] font-medium bg-white hover:translate-y-[-10px] 
-          relative hover:shadow-blue-200 hover:border-blue-500  
+          relative hover:shadow-blue-200  
             cursor-default transition-all ease-in-out  items-center
             h-[260px] shadow-md border rounded-lg p-4 font-sans"
           >
@@ -46,7 +46,7 @@ function CardSection() {
           </div>
           <div
             className="w-[290px] font-medium bg-white hover:translate-y-[-10px] 
-          relative hover:shadow-blue-200 hover:border-blue-500  
+          relative hover:shadow-blue-200  
             cursor-default transition-all ease-in-out  items-center
             h-[260px] shadow-md border rounded-lg p-4 font-sans"
           >

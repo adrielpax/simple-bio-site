@@ -10,20 +10,18 @@ import { TbTargetArrow } from "react-icons/tb";
 export default function CompareSection() {
   return (
     <>
-      <Wrapper className="flex justify-center">
+      <Wrapper className="flex mt-8 justify-center">
         <div
           className="flex flex-col justify-center w-[600px] md:w-full items-center
           p-6 py-8 bg-white rounded"
         >
           <h2
-            className="text-4xl font-medium mb-9
+            className="text-4xl font-medium 
           w-auto px-4 p-2 text-slate-800
           text-center pb-10 
           shadow-gray-400"
           >
-            Por que devo ter uma 
-            <span className="text-blue-500">{" "}Pagina{" "}</span> 
-            ou um 
+            Por que devo ter um 
             <span className="text-blue-500">{" "}Web Site{" "}</span> 
             para meu negocio ? 😉👇
           </h2>

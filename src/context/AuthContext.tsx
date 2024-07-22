@@ -1,8 +1,12 @@
 import { createContext, useState, useEffect } from 'react';
 
-const AuthContext = createContext();
+const AuthContext = createContext({});
 
-export const AuthProvider = ({ children }) => {
+interface Props {
+  children:React.ReactNode
+}
+
+export const AuthProvider = ({ children }:Props) => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {

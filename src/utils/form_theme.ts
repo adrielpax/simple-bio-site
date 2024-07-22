@@ -1,3 +1,9 @@
+enum ImageFit {
+  Cover = "cover",
+  Contain = "contain",
+  // outros valores...
+}
+
 export const themeJson = {
   "themeName": "default",
   "colorPalette": "light",
@@ -5,7 +11,7 @@ export const themeJson = {
   "backgroundImage": "",
   "backgroundOpacity": 1,
   "backgroundImageAttachment": "scroll",
-  "backgroundImageFit": "cover",
+  "backgroundImageFit": "cover" as ImageFit,
   "cssVariables": {
     "--sjs-corner-radius": "4px",
     "--sjs-base-unit": "8px",
