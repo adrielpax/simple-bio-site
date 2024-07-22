@@ -17,18 +17,19 @@ export default function CompareSection() {
         >
           <h2
             className="text-4xl font-medium mb-9
-          w-auto px-4 p-2 text-slate-800 border-b 
-          text-center rounded pb-10 
+          w-auto px-4 p-2 text-slate-800
+          text-center pb-10 
           shadow-gray-400"
           >
             Por que devo ter uma 
-            <span className="text-blue-500">{" "}pagina{" "}</span> 
-            ou um 2
-            <span className="text-blue-500">{" "}site{" "}</span> 
-            para meu negocio ? 👇
+            <span className="text-blue-500">{" "}Pagina{" "}</span> 
+            ou um 
+            <span className="text-blue-500">{" "}Web Site{" "}</span> 
+            para meu negocio ? 😉👇
           </h2>
 
-          <ul className="flex flex-wrap justify-center gap-x-5 gap-y-3 w-full">
+          <ul className="flex flex-wrap justify-center gap-x-5 gap-y-3 w-full border-b
+          border-t py-16">
             <li
               className="w-[250px] font-sans font-medium text-slate-600 shadow-md
               hover:translate-y-[-5px] flex items-center justify-start gap-2
