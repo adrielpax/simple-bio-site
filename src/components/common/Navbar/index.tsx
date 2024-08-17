@@ -15,12 +15,14 @@ function Navbar() {
   return (
     <>
       <div
-        className={`bg-white shrink-0 w-full h-[90px] md:h-[80px] overflow-visible relative z-50 top-0 
-        transition-all ease-in-out decoration-lime-300 bg-opacity-0 border-none shadow backdrop-blur-sm`}
+        className={`bg-white shrink-0 w-full h-[90px] md:h-[80px] 
+        overflow-visible relative z-50 top-0 
+        transition-all ease-in-out  
+        decoration-lime-300 bg-opacity-0 border-none shadow backdrop-blur-sm`}
       >
         <Wrapper
           className="flex flex-row items-center text-[#12121299] 
-            justify-between py-1 h-full w-full"
+          md:justify-evenly lg:justify-around xl:justify-between py-1 h-full w-full"
         >
           <Link href={"/"} className="flex ">
             <div className="scale-100 ml-4 md:scale-105">
@@ -75,7 +77,7 @@ function Navbar() {
                   >
                     Produtos e Serviços
                   </li>
-                  <li
+                  {/* <li
                     className="cursor-pointer rounded p-1 hover:text-blue-600
                     transition-all duration-200 ease-in-out font-medium drop-shadow"
                   >
@@ -86,7 +88,7 @@ function Navbar() {
                     transition-all duration-200 ease-in-out font-medium drop-shadow"
                   >
                     FAQ
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </>
@@ -94,13 +96,13 @@ function Navbar() {
           <div className="hidden md:block">
             <>
               <div className="flex items-center gap-4">
-                <button
+                {/* <button
                   className="font-semibold text-sm font-sans border
                   border-transparent rounded px-6 py-3
                 bg-black text-white hover:opacity-70"
                 >
                   Entrar
-                </button>
+                </button> */}
                 <button
                   className="font-semibold text-sm font-sans border
                   border-transparent rounded px-6 py-3

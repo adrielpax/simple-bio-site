@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 function Footer() {
+  const actualYear = new Date().getFullYear().toString();
   return (
     <>
       <div
@@ -41,43 +42,69 @@ function Footer() {
               </>
             </div>
           </div>
-          <div className="flex-[1_1_0] p-4 pt-0">
+          <div className="flex-[1_1_0] p-4 pt-0 hidden">
             <h4 className="mb-6 text-lg font-sans font-medium text-slate-800">
               Links Uteis
             </h4>
             <ul className="flex flex-col gap-2">
-              <Link href={""} className="text-slate-600">Blogs</Link>
-              <Link href={""} className="text-slate-600">Preços</Link>
-              <Link href={""} className="text-slate-600">Sobre nós</Link>
+              <Link href={""} className="text-slate-600">
+                Blogs
+              </Link>
+              <Link href={""} className="text-slate-600">
+                Preços
+              </Link>
+              <Link href={""} className="text-slate-600">
+                Sobre nós
+              </Link>
             </ul>
           </div>
-          <div className="flex-[1_1_0] p-4 pt-0">
+          <div className="flex-[1_1_0] p-4 pt-0 hidden">
             <h4 className="mb-6 text-lg font-sans font-medium text-slate-800">
               Termos
             </h4>
             <ul className="flex flex-col gap-2">
-              <Link href={""} className="text-slate-600">Termos de Uso e Serviços</Link>
-              <Link href={""} className="text-slate-600">Politica de Privacidade</Link>
-              <Link href={""} className="text-slate-600">Politica de Reembolso</Link>
+              <Link href={""} className="text-slate-600">
+                Termos de Uso e Serviços
+              </Link>
+              <Link href={""} className="text-slate-600">
+                Politica de Privacidade
+              </Link>
+              <Link href={""} className="text-slate-600">
+                Politica de Reembolso
+              </Link>
             </ul>
           </div>
-          <div className="flex-[1_1_0] p-4 pt-0">
+          <div className="flex-[1_1_0] p-4 pt-0 hidden">
             <h4 className="mb-6 text-lg font-sans font-medium text-slate-800">
               Suporte & Ajuda
             </h4>
             <ul className="flex flex-col gap-2">
-              <Link href={""} className="text-slate-600">Suporte</Link>
-              <Link href={""} className="text-slate-600">Termos de Uso</Link>
-              <Link href={""} className="text-slate-600">Sobre</Link>
+              <Link href={""} className="text-slate-600">
+                Suporte
+              </Link>
+              <Link href={""} className="text-slate-600">
+                Termos de Uso
+              </Link>
+              <Link href={""} className="text-slate-600">
+                Sobre
+              </Link>
             </ul>
           </div>
         </Wrapper>
       </div>
-      <div className="w-full bg-black text-white opacity-90 backdrop-blur-sm border-t-4">
-        <Wrapper className="py-8 px-6 flex justify-center items-end">
-          <div className="flex text-sm font-sans flex-col gap-2 text-center justify-end">
-            <p>Copyrights all directs reserves at - Square Oden digital marketing agency</p>
-            <p>Developed by <span>adrieldev</span></p>
+      <div className="w-full bg-gray-950 text-white opacity-90 backdrop-blur-sm border-t-1">
+        <Wrapper className="py-2 flex flex-col justify-center items-center gap-5">
+          <div className="flex text-xs font-sans flex-col gap-2 text-center justify-end">
+            <p>Copyrights all directs reserves at - Square Oden.</p>
+            <p>Desde 2020 - {actualYear}</p>
+          </div>
+          <div className="text-xs">
+            <p>
+              Developed by{" "}
+              <a href="https://adrieldev.vercel.app/" target="_blank">
+                adrieldev
+              </a>
+            </p>
           </div>
         </Wrapper>
       </div>

@@ -6,11 +6,11 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function InfoNavbar() {
   const pathname = usePathname();
-  const homepage = pathname === "/";
+  const homepage = false;//pathname === "/";
 
   return (
     <div
-      className={`bg-black text-white px-8 py-2 z-10 transition-all 
+      className={`bg-black text-white px-8 py-2 z-10 transition-all
       ease-in ${homepage ? "hidden md:block" : "hidden"}`}
     >
       <Wrapper className="flex justify-between">

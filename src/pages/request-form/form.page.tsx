@@ -38,7 +38,7 @@ function index() {
 
   return (
     <>
-      <Header />
+  
       <Wrapper className="h-screen">
         <div className="flex justify-center items-center h-full">
           <div className="flex flex-col gap-0 shadow rounded">
@@ -82,7 +82,7 @@ function index() {
           </div>
         </div>
       </Wrapper>
-      <Footer />
+  
     </>
   );
 }

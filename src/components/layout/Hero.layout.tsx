@@ -2,8 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Wrapper from "./Wrapper.layout";
 import { SvgHero } from "@/utils/svgs";
+import { useRouter } from "next/router";
 
 function Hero() {
+  const router = useRouter()
+
   return (
     <>
       <div className="absolute right-0 top-0 z-0">
@@ -46,6 +49,7 @@ function Hero() {
                     text-base font-semibold text-white duration-300
                     md:w-auto hover:scale-105 transition-all ease-in-out shadow
                     shadow-blue-600 active:bg-blue-400"
+                    onClick={()=>router.push("request-form")}
                 >
                   Vamos Começar 🔥
                 </button>

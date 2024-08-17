@@ -1,9 +1,10 @@
 import React from "react";
-import Image from "next/image";
 import Wrapper from "../Wrapper.layout";
 import { FaCheckSquare } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 export default function ServicesOffer() {
+  const router = useRouter();
   return (
     <>
       <Wrapper className="relative z-10 overflow-hidden bg-transparent py-20 px-4">
@@ -77,6 +78,7 @@ export default function ServicesOffer() {
                     text-base font-semibold text-white duration-300
                     md:w-auto hover:scale-105 transition-all ease-in-out
                     shadow shadow-blue-600 active:bg-blue-400"
+                    onClick={()=>router.push("/request-form")}
                 >
                   Saber Mais
                 </button>
