@@ -12,10 +12,10 @@ function WeServices() {
       <Wrapper className="py-12">
         <div className="flex flex-col w-full px-4 items-center justify-center mb-12">
           <div className="flex gap-2 flex-col justify-center text-center">
-            <h1 className="text-5xl font-bold font-sans text-black">
-              Nossos Serviços
+            <h1 className="text-2xl md:text-5xl font-bold font-sans text-black">
+              O que entregamos para o seu negocio
             </h1>
-            <p className="text-xl font-medium text-slate-600">
+            <p className="text-base md:text-xl font-medium text-slate-600">
               Clique em veja mais para saber sobre como obter cada serviço
             </p>
           </div>
@@ -25,9 +25,9 @@ function WeServices() {
         <div className="flex flex-wrap mx-auto gap-x-2 gap-3 justify-center">
           <>
             <div
-              className="flex flex-col gap-4 
-          hover:shadow-none shadow-md transition-all duration-400
-          cursor-default bg-white border rounded-md p-4 w-[290px]"
+              className="flex md:w-1/2 flex-col gap-4 
+          hover:border-blue-500  hover:shadow-md transition-all duration-400
+          cursor-default bg-white border-2 rounded-md p-4"
             >
               <MdWeb
                 className="w-12 h-12 border-2 p-1 rounded text-blue-600
@@ -46,8 +46,8 @@ function WeServices() {
           <>
             <div
               className="flex flex-col gap-4 
-          hover:shadow-none shadow-md transition-all duration-400
-          cursor-default bg-white border rounded-md p-4 w-[290px]"
+              hover:border-blue-500  hover:shadow-md transition-all duration-400
+              cursor-default bg-white border-2 rounded-md p-4 md:w-1/3"
             >
               <LuLayoutPanelLeft
                 className="w-12 h-12 border-2 p-1
@@ -67,8 +67,8 @@ function WeServices() {
           <>
             <div
               className="flex flex-col gap-4 
-            hover:shadow-none shadow-md transition-all duration-400
-            cursor-default bg-white border rounded-md p-4 w-[290px]"
+            hover:border-blue-500  hover:shadow-md transition-all duration-400
+            cursor-default bg-white border-2 rounded-md p-4 md:w-1/2"
             >
               <FaPencilRuler
                 className="w-12 h-12 border-2 p-1
@@ -88,8 +88,8 @@ function WeServices() {
           <>
             <div
               className="flex flex-col gap-4 
-          hover:shadow-none shadow-md transition-all duration-400
-          cursor-default bg-white border rounded-md p-4 w-[290px]"
+          hover:border-blue-500  hover:shadow-md transition-all duration-400
+          cursor-default bg-white border-2 rounded-md p-4 md:w-1/3"
             >
               <FaPeopleGroup
                 className="w-12 h-12 border-2 p-1

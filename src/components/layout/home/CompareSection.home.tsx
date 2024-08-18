@@ -16,7 +16,7 @@ export default function CompareSection() {
           p-6 py-8 bg-white rounded"
         >
           <h2
-            className="text-4xl font-medium 
+            className="text-2xl md:text-4xl font-medium 
           w-auto px-4 p-2 text-slate-800
           text-center pb-10 
           shadow-gray-400"
@@ -29,7 +29,7 @@ export default function CompareSection() {
           <ul className="flex flex-wrap justify-center gap-x-5 gap-y-3 w-full border-b
           border-t py-16">
             <li
-              className="w-[250px] font-sans font-medium text-slate-600 shadow-md
+              className="w-[92%] md:w-[250px] font-sans font-medium text-slate-600 shadow-md
               hover:translate-y-[-5px] flex items-center justify-start gap-2
               transition-all ease-in-out hover:shadow-blue-200 hover:border-blue-500
               cursor-default bg-white border rounded-lg p-5"
@@ -38,7 +38,7 @@ export default function CompareSection() {
               Profissionalismo
             </li>
             <li
-              className="w-[250px] font-sans font-medium text-slate-600 shadow-md
+              className="w-[92%] md:w-[250px] font-sans font-medium text-slate-600 shadow-md
               hover:translate-y-[-5px] flex items-center justify-start gap-2
               transition-all ease-in-out hover:shadow-blue-200 hover:border-blue-500 
               cursor-default bg-white border rounded-lg p-5"
@@ -47,7 +47,7 @@ export default function CompareSection() {
               Disponibilidade 24/7
             </li>
             <li
-              className="w-[250px] font-sans font-medium text-slate-600 shadow-md
+              className="w-[92%] md:w-[250px] font-sans font-medium text-slate-600 shadow-md
               hover:translate-y-[-5px] flex items-center justify-start gap-2
               transition-all ease-in-out hover:shadow-blue-200 hover:border-blue-500 
               cursor-default bg-white border rounded-lg p-5"
@@ -56,7 +56,7 @@ export default function CompareSection() {
               Global
             </li>
             <li
-              className="w-[250px] font-sans font-medium text-slate-600 shadow-md
+              className="w-[92%] md:w-[250px] font-sans font-medium text-slate-600 shadow-md
               hover:translate-y-[-5px] flex items-center justify-start gap-2
               transition-all ease-in-out hover:shadow-blue-200 hover:border-blue-500 
               cursor-default bg-white border rounded-lg p-5"
@@ -65,7 +65,7 @@ export default function CompareSection() {
               Visibilidade
             </li>
             <li
-              className="w-[250px] font-sans font-medium text-slate-600 shadow-md
+              className="w-[92%] md:w-[250px] font-sans font-medium text-slate-600 shadow-md
               hover:translate-y-[-5px] flex justify-start gap-2 
               transition-all ease-in-out hover:shadow-blue-200 hover:border-blue-500 
               cursor-default bg-white border rounded-lg p-5"
@@ -74,7 +74,7 @@ export default function CompareSection() {
               Serviço ao Cliente
             </li>
             <li
-              className="w-[250px] font-sans font-medium text-slate-600 shadow-md
+              className="w-[92%] md:w-[250px] font-sans font-medium text-slate-600 shadow-md
               hover:translate-y-[-5px] flex items-center justify-start gap-2
               transition-all ease-in-out hover:shadow-blue-200 hover:border-blue-500 
               cursor-default bg-white border rounded-lg p-5"
@@ -82,7 +82,7 @@ export default function CompareSection() {
               <GiBiceps className="w-10 h-10 text-blue-500" /> Competitividade
             </li>
             <li
-              className="w-[250px] font-sans font-medium text-slate-600 shadow-md
+              className="w-[92%] md:w-[250px] font-sans font-medium text-slate-600 shadow-md
               hover:translate-y-[-5px] flex items-center justify-start gap-2
               transition-all ease-in-out hover:shadow-blue-200 hover:border-blue-500 
               cursor-default bg-white border rounded-lg p-5"
@@ -91,7 +91,7 @@ export default function CompareSection() {
               Custo-efetividade
             </li>
             <li
-              className="w-[250px] font-sans font-medium text-slate-600 shadow-md
+              className="w-[92%] md:w-[250px] font-sans font-medium text-slate-600 shadow-md
               hover:translate-y-[-5px] flex items-center justify-start gap-2
               transition-all ease-in-out hover:shadow-blue-200 hover:border-blue-500 
               cursor-default bg-white border rounded-lg p-5"

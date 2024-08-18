@@ -5,10 +5,13 @@ import Wrapper from "../Wrapper.layout";
 export default function Highlighted() {
   return (
     <>
-      <Wrapper className="relative z-10 overflow-hidden bg-transparent md:py-20 sm:pb-10 p-4">
+      <Wrapper
+        className="relative z-10 overflow-hidden md:py-20 sm:pb-10 p-4 
+      bg-white"
+      >
         <div
           className="-mx-4 flex flex-col-reverse items-center 
-          justify-center md:flex-row-reverse "
+          justify-center md:flex-row-reverse"
         >
           <div className="w-full px-4 md:max-w-[700px]">
             <div
@@ -17,19 +20,27 @@ export default function Highlighted() {
               data-wow-delay=".2s"
             >
               <h1
-                className="mb-5 text-3xl font-bold leading-tight
-                 text-black  sm:text-4xl sm:leading-tight 
+                className="mb-5 text-4xl font-bold leading-tight
+                 text-black mt-2  sm:text-4xl sm:leading-tight 
                  md:text-5xl md:leading-tight font-sans text-left"
               >
                 Tenha seu Site e Gere trafego para seu negocio
               </h1>
               <p
-                className="mb-12 text-left text-base !leading-relaxed text-body-color 
-                 sm:text-lg md:text-xl font-medium text-slate-600 font-sans"
+                className=" text-left !leading-relaxed text-body-color 
+                 text-xl md:text-xl font-medium text-slate-600 font-sans"
               >
-                Em um mundo cada vez mais digital, a presença online tornou-se
-                essencial para o sucesso de qualquer negócio. Aqui estão algumas
-                razões cruciais pelas quais ter um site é indispensável:
+                A presença online tornou-se essencial para o sucesso de qualquer
+                negócio. É indispensavel hoje não estar em uma plataforma de
+                midia social ou não ter um site proprio.
+                <br />
+              </p>
+              <p
+                className="text-blue-700 text-left font-sans
+              text-xl md:text-xl font-medium"
+              >
+                {" "}
+                Com um site você não encontra, os clientes encontram você.
               </p>
               <div
                 className="flex flex-col items-center justify-start
@@ -47,7 +58,7 @@ export default function Highlighted() {
           </div>
           <div
             className="pointer-events-none w-full select-none 
-            px-4 md:w-auto flex justify-center scale-75"
+            px-4 md:w-auto flex justify-center scale-100 border-b"
           >
             <Image
               src="/imgs/target-audience.png"

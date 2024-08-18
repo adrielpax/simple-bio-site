@@ -26,7 +26,7 @@ function Hero() {
               <h1
                 className="mb-5 font-bold 
                  text-black text-left text-4xl
-                 md:text-5xl leading-tight font-sans "
+                 md:text-5xl leading-tight font-sans"
               >
                 Potencialize sua presença online com a {" "}
                 <span className="text-blue-700">Square Oden</span>
@@ -35,20 +35,20 @@ function Hero() {
                 className="mb-12 text-xl text-left !leading-relaxed text-body-color 
                 md:text-xl font-medium text-slate-600 font-sans"
               >
-                Oferecemos soluções de marketing digital personalizadas para
-                impulsionar o seu negócio. Desenvolvemos sites, logos, páginas
-                em redes sociais, posts e muito mais, tudo de acordo com as suas
-                necessidades.
+                Soluções em Marketing e Tecnologia no digital, personalizadas para
+                impulsionar o seu negócio 🚀. Desenvolvemos o melhor em tecnologia e design
+                para impulsionar sua marcar atraves do branding.
               </p>
               <div
                 className="flex flex-col items-center justify-start
                  space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
               >
                 <button
-                  className="w-full rounded bg-blue-600 px-8 py-4 
-                    text-base font-semibold text-white duration-300
-                    md:w-auto hover:scale-105 transition-all ease-in-out shadow
-                    shadow-blue-600 active:bg-blue-400"
+                  className="md:w-1/2 rounded-md bg-blue-600 px-8 py-4 
+                    text-base font-semibold text-white border-2
+                    hover:scale-105 transition-all ease-in-out hover:shadow-md
+                    hover:bg-blue-800 shadow-slate-500 hover:border-black
+                    active:bg-black w-[220px]"
                     onClick={()=>router.push("request-form")}
                 >
                   Vamos Começar 🔥

@@ -92,13 +92,13 @@ function Footer() {
           </div>
         </Wrapper>
       </div>
-      <div className="w-full bg-gray-950 text-white opacity-90 backdrop-blur-sm border-t-1">
+      <div className="w-full text-black opacity-90 backdrop-blur-sm border-t-1">
         <Wrapper className="py-2 flex flex-col justify-center items-center gap-5">
           <div className="flex text-xs font-sans flex-col gap-2 text-center justify-end">
             <p>Copyrights all directs reserves at - Square Oden.</p>
             <p>Desde 2020 - {actualYear}</p>
           </div>
-          <div className="text-xs">
+          <div className="text-xs ">
             <p>
               Developed by{" "}
               <a href="https://adrieldev.vercel.app/" target="_blank">

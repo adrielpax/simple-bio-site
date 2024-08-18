@@ -27,8 +27,8 @@ export default function Offer() {
                 Melhore, Otimize e Gerencie Posts e Midias Sociais
               </h1>
               <p
-                className="mb-12 text-base !leading-relaxed text-body-color 
-                 sm:text-lg md:text-xl font-medium text-slate-600 font-sans"
+                className="mb-12 !leading-relaxed text-body-color 
+                 text-xl md:text-xl font-medium text-slate-600 font-sans"
               >
                 Aumente seu engajamento e alcance com nossos serviços
                 especializados em gerenciamento de redes sociais: branding,
@@ -39,20 +39,21 @@ export default function Offer() {
                  space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
               >
                 <button
-                  className="w-full rounded bg-blue-600 px-8 py-4 
-                    text-base font-semibold text-white duration-300
-                    md:w-auto hover:scale-105 transition-all ease-in-out
-                    shadow shadow-blue-600 active:bg-blue-400"
+                  className="md:w-1/2 rounded bg-blue-700 px-8 py-4 
+                    text-base font-semibold text-white hover:bg-blue-800
+                    hover:border-black border-2
+                    w-[220px] hover:scale-105 transition-all ease-in-out
+                    active:shadow-md active:bg-black"
                   onClick={() => router.push("request-form")}
                 >
-                  Eu quero isso !
+                  Eu quero isso!
                 </button>
               </div>
             </div>
           </div>
           <div
             className="pointer-events-none w-full select-none 
-            px-4 md:w-auto flex justify-center scale-75"
+            px-4 md:w-auto flex justify-center"
           >
             <Image
               src="/imgs/performance-overview.png"
