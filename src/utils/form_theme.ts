@@ -1,18 +1,12 @@
-enum ImageFit {
-  Cover = "cover",
-  Contain = "contain",
-  // outros valores...
-}
-
 export const themeJson = {
-  "themeName": "default",
-  "colorPalette": "light",
-  "isPanelless": false,
-  "backgroundImage": "",
-  "backgroundOpacity": 1,
-  "backgroundImageAttachment": "scroll",
-  "backgroundImageFit": "cover" as ImageFit,
-  "cssVariables": {
+  themeName: "default",
+  colorPalette: "light",
+  isPanelless: false,
+  backgroundImage: "",
+  backgroundOpacity: 1,
+  backgroundImageAttachment: "scroll",
+  backgroundImageFit: "cover",
+  cssVariables: {
     "--sjs-corner-radius": "4px",
     "--sjs-base-unit": "8px",
     "--sjs-shadow-small": "0px 1px 2px 0px rgba(0, 0, 0, 0.15)",
@@ -96,5 +90,5 @@ export const themeJson = {
     "--sjs-special-red": "rgba(229, 10, 62, 1)",
     "--sjs-special-red-light": "rgba(229, 10, 62, 0.1)"
   },
-  "headerView": "basic"
-}
+  headerView: "basic"
+};

@@ -9,8 +9,9 @@ import { json } from "@/utils/request_form";
 function SurveyComponent() {
   const survey = new Model(json);
   survey.applyTheme({ cssVariables: { "--sjs-primary-backcolor": "#1D4ED8" } });
-  survey.onComplete.add((sender, options) => {
-    console.log(JSON.stringify(sender.data, null, 3));
+  survey.onComplete.add((sender: { data: any; }, options: any) => {
+    const data = JSON.stringify(sender.data, null, 3) 
+    console.log(data);
   });
   return <Survey model={survey} />;
 }
