@@ -15,8 +15,8 @@ const Home = () => {
         subtitle="Transformação digital que gera resultados reais. Mais de 500 empresas já confiaram em nós para alcançar o sucesso online."
         ctaText="Quero Transformar Minha Empresa"
       />
-      <VideoSection />
       <ContactFormSection />  
+      <VideoSection />
       <BenefitsSection />
       <ProcessSection />
       <ClientsSection />
