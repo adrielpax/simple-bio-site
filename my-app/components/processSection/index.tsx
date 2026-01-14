@@ -60,7 +60,7 @@ export default function ProcessSection() {
   return (
     <section
       id="process-section"
-      className="w-full py-16 md:py-24 px-4 bg-gradient-to-br from-zinc-800 to-zinc-900 relative overflow-hidden"
+      className="w-full py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-zinc-800 to-zinc-900 relative overflow-hidden"
     >
       {/* Decoração de fundo */}
       <div className="absolute inset-0 opacity-10">
@@ -68,11 +68,11 @@ export default function ProcessSection() {
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="uppercase text-shadow-lg font-bold text-3xl md:text-4xl lg:text-5xl mb-4 text-white">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="uppercase text-shadow-lg font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 text-white px-2">
             Do Contato ao Resultado Final
           </h2>
-          <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto px-2">
             Um processo transparente e estruturado que garante qualidade em cada etapa do seu projeto
           </p>
         </div>
@@ -84,45 +84,45 @@ export default function ProcessSection() {
             bg-gradient-to-r from-cyan-500/20 via-green-500/20 to-cyan-500/20 
             transform -translate-y-1/2" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {steps.map((step, index) => (
               <div
                 key={index}
                 className="relative"
               >
                 <div
-                  className={`flex flex-col rounded-2xl p-6 md:p-8 backdrop-blur border
+                  className={`flex flex-col rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 backdrop-blur border
                     bg-gradient-to-br ${colorClasses[step.color as keyof typeof colorClasses]}
                     shadow-lg transition-all ease-in-out hover:shadow-xl hover:-translate-y-2
                     h-full relative`}
                 >
                   {/* Número do passo */}
-                  <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full
+                  <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-10 h-10 sm:w-12 sm:h-12 rounded-full
                     bg-gradient-to-r from-cyan-400 to-green-400
-                    flex items-center justify-center text-gray-900 font-bold text-lg
+                    flex items-center justify-center text-gray-900 font-bold text-sm sm:text-lg
                     shadow-lg border-2 border-white/20">
                     {step.number}
                   </div>
 
                   {/* Ícone */}
-                  <div className={`mb-4 mt-2 ${
+                  <div className={`mb-3 sm:mb-4 mt-2 [&>svg]:w-6 [&>svg]:h-6 sm:[&>svg]:w-7 sm:[&>svg]:h-7 md:[&>svg]:w-8 md:[&>svg]:h-8 ${
                     step.color === "cyan" ? "text-cyan-400" : "text-green-400"
                   }`}>
                     {step.icon}
                   </div>
 
                   {/* Conteúdo */}
-                  <h3 className="uppercase font-bold text-xl md:text-2xl mb-3 text-white">
+                  <h3 className="uppercase font-bold text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 text-white">
                     {step.title}
                   </h3>
-                  <p className="text-white/80 text-sm md:text-base leading-relaxed mb-4 flex-1">
+                  <p className="text-white/80 text-xs sm:text-sm md:text-base leading-relaxed mb-3 sm:mb-4 flex-1">
                     {step.description}
                   </p>
 
                   {/* Duração */}
-                  <div className="flex items-center gap-2 pt-4 border-t border-white/10">
-                    <Clock className="w-4 h-4 text-white/60" />
-                    <span className="text-white/60 text-xs uppercase font-medium">
+                  <div className="flex items-center gap-2 pt-3 sm:pt-4 border-t border-white/10">
+                    <Clock className="w-3 h-3 sm:w-4 sm:h-4 text-white/60" />
+                    <span className="text-white/60 text-[10px] sm:text-xs uppercase font-medium">
                       {step.duration}
                     </span>
                   </div>
@@ -140,25 +140,25 @@ export default function ProcessSection() {
         </div>
 
         {/* CTA Final */}
-        <div className="text-center mt-12 md:mt-16">
-          <div className="inline-flex flex-col items-center gap-4 p-8 rounded-2xl backdrop-blur border border-cyan-500/20
+        <div className="text-center mt-8 sm:mt-12 md:mt-16">
+          <div className="inline-flex flex-col items-center gap-3 sm:gap-4 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl backdrop-blur border border-cyan-500/20
             bg-gradient-to-br from-cyan-500/10 to-green-500/10 max-w-2xl">
-            <h3 className="uppercase font-bold text-2xl md:text-3xl text-white">
+            <h3 className="uppercase font-bold text-xl sm:text-2xl md:text-3xl text-white px-2">
               Pronto Para Começar?
             </h3>
-            <p className="text-white/80 text-sm md:text-base">
+            <p className="text-white/80 text-xs sm:text-sm md:text-base px-2">
               Entre em contato agora e inicie sua jornada de transformação digital
             </p>
             <a
               href="#contact-section"
-              className="uppercase text-shadow-lg/20 rounded-full px-8 py-4 border border-white/30 
+              className="uppercase text-shadow-lg/20 rounded-full px-6 sm:px-8 py-3 sm:py-4 border border-white/30 
                 bg-gradient-to-r from-cyan-400 to-green-400
                 font-bold hover:scale-105 active:scale-95 hover:border-b-white transition-all ease-in-out
                 shadow-lg hover:shadow-green-500/60 active:bg-cyan-500 flex items-center gap-2 justify-center
-                text-gray-900 mt-2"
+                text-gray-900 mt-2 text-sm sm:text-base"
             >
               Iniciar Processo
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </a>
           </div>
         </div>

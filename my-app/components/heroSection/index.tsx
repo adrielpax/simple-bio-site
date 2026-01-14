@@ -22,7 +22,7 @@ export default function HeroSection({
   return (
     <section
       id="hero-section"
-      className="relative w-full min-h-[80vh] md:min-h-[150vh] -mt-40 flex items-center justify-center overflow-hidden"
+      className="relative w-full min-h-[300vh] -mt-40 flex items-center justify-center overflow-hidden"
     >
       {/* Background - Vídeo, Imagem ou Gradiente */}
       <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 to-zinc-900">
@@ -54,54 +54,54 @@ export default function HeroSection({
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/60" />
 
       {/* Conteúdo */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 py-20 md:py-32 text-center">
-        <div className="flex flex-col gap-6 md:gap-8 items-center">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 sm:py-20 md:py-32 text-center">
+        <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 items-center">
           {/* Badge de destaque */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full 
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full 
             bg-cyan-500/20 border border-cyan-500/30 backdrop-blur-sm mb-2">
-            <TrendingUp className="w-4 h-4 text-cyan-400" />
-            <span className="text-cyan-400 text-xs font-bold uppercase">+500 Empresas Transformadas</span>
+            <TrendingUp className="w-3 h-3 sm:w-4 sm:h-4 text-cyan-400" />
+            <span className="text-cyan-400 text-[10px] sm:text-xs font-bold uppercase">+500 Empresas Transformadas</span>
           </div>
 
-          <h1 className="uppercase text-shadow-lg font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight">
+          <h1 className="uppercase text-shadow-lg font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight px-2">
             {title}
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl text-shadow-lg/50 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl text-shadow-lg/50 leading-relaxed px-2">
             {subtitle}
           </p>
 
           {/* Estatísticas rápidas */}
-          <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-4">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mt-4">
             <div className="flex items-center gap-2 text-white/80">
-              <Users className="w-5 h-5 text-cyan-400" />
-              <span className="text-sm md:text-base"><strong className="text-white">200+</strong> Clientes Ativos</span>
+              <Users className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400" />
+              <span className="text-xs sm:text-sm md:text-base"><strong className="text-white">200+</strong> Clientes Ativos</span>
             </div>
             <div className="flex items-center gap-2 text-white/80">
-              <TrendingUp className="w-5 h-5 text-green-400" />
-              <span className="text-sm md:text-base"><strong className="text-white">98%</strong> Taxa de Satisfação</span>
+              <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-green-400" />
+              <span className="text-xs sm:text-sm md:text-base"><strong className="text-white">98%</strong> Taxa de Satisfação</span>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-6 md:mt-8">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto">
             <a
               href="#contact-section"
-              className="uppercase text-shadow-lg/20 rounded-full px-8 py-4 border border-white/30 
+              className="uppercase text-shadow-lg/20 rounded-full px-6 sm:px-8 py-3 sm:py-4 border border-white/30 
                 bg-gradient-to-r from-cyan-400 to-green-400 w-full sm:w-auto
                 font-bold hover:scale-105 active:scale-95 hover:border-b-white transition-all ease-in-out
                 shadow-lg hover:shadow-green-500/60 active:bg-cyan-500 flex items-center justify-center gap-2
-                text-gray-900"
+                text-gray-900 text-sm sm:text-base"
             >
               {ctaText}
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </a>
             <button
-              className="uppercase text-shadow-lg/20 rounded-full px-8 py-4 border border-white/30 
+              className="uppercase text-shadow-lg/20 rounded-full px-6 sm:px-8 py-3 sm:py-4 border border-white/30 
                 bg-black/20 w-full sm:w-auto hover:bg-gradient-to-b
                 font-bold active:scale-95 hover:border-b-cyan-500 transition-all ease-in-out
                 shadow-lg hover:bg-white/10 active:bg-gradient-to-r active:from-cyan-400 active:to-green-400
-                active:shadow-green-500/30 flex items-center justify-center gap-2 text-white"
+                active:shadow-green-500/30 flex items-center justify-center gap-2 text-white text-sm sm:text-base"
             >
-              <Play className="w-5 h-5" />
+              <Play className="w-4 h-4 sm:w-5 sm:h-5" />
               Ver Cases de Sucesso
             </button>
           </div>

@@ -18,17 +18,17 @@ export default function Navbar() {
     return (
     <nav className="w-full bg-black/40 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
             <Wrapper>
-        <div className="flex flex-row gap-4 justify-between items-center py-3">
+        <div className="flex flex-row gap-2 sm:gap-4 justify-between items-center py-2 sm:py-3">
           {/* Logo - mantido intacto */}
                     <div className="flex flex-row items-center text-shadow-lg font-sans select-none">
                         <div className="uppercase flex flex-col border-r border-white/20 mr-2 pr-2">
-                        <span className="flex items-center self-start text-xl">
+                        <span className="flex items-center self-start text-lg sm:text-xl">
                             Elevar
                 <ChevronsDown
-                  className="text-green-400 rotate-225 self-end relative -top-3 right-0"
+                  className="text-green-400 rotate-225 self-end relative -top-3 right-0 w-3 h-3 sm:w-4 sm:h-4"
                             />
                         </span>
-                        <span className="flex items-center text-cyan-500 self-end text-xs -mt-2">
+                        <span className="flex items-center text-cyan-500 self-end text-[10px] sm:text-xs -mt-2">
                             Digital
                         </span>
                         </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
                         </div>
                         
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-4 lg:gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -72,7 +72,7 @@ export default function Navbar() {
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden p-2 rounded-lg backdrop-blur-md bg-white/5 
-              border border-white/10 hover:bg-white/10 transition-all"
+              border border-white/10 hover:bg-white/10 transition-all flex-shrink-0"
             aria-label="Toggle menu"
           >
             {menuOpen ? (
@@ -86,14 +86,14 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden py-4 border-t border-white/5 animate-in slide-in-from-top">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3 sm:gap-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
                   className="text-sm font-medium text-white/70 hover:text-cyan-400 
-                    transition-colors py-2"
+                    transition-colors py-2 px-2 -mx-2 rounded-lg hover:bg-white/5"
                 >
                   {link.label}
                 </Link>
@@ -101,9 +101,9 @@ export default function Navbar() {
               <Link
                 href="/login"
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-2 px-4 py-2 rounded-lg
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg
                   bg-white/10 hover:bg-white/20 border border-white/20
-                  transition-all text-sm font-medium"
+                  transition-all text-sm font-medium mt-1"
               >
                 <LogIn className="w-4 h-4" />
                 Entrar

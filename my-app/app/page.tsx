@@ -5,7 +5,7 @@ import Footer from "@/components/footer";
 export default function HomePage() {
   return (
     <div className={`flex flex-col min-h-screen items-start justify-start 
-      bg-gradient-to-br from-zinc-700 to-zinc-600 
+      bg-linear-to-br from-black to-zinc-800 
       text-white`}>
       <Navbar />
       <main className="w-full flex-1">
