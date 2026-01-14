@@ -35,11 +35,11 @@ export default function LoginPage() {
     const validation = loginSchema.safeParse(formData);
     if (!validation.success) {
       const fieldErrors: Partial<Record<keyof LoginData, string>> = {};
-      validation.error.errors.forEach((err) => {
-        if (err.path[0]) {
-          fieldErrors[err.path[0] as keyof LoginData] = err.message;
+      for (const issue of validation.error.issues) {
+        if (issue.path && issue.path[0]) {
+          fieldErrors[issue.path[0] as keyof LoginData] = issue.message;
         }
-      });
+      }
       setErrors(fieldErrors);
       return;
     }
