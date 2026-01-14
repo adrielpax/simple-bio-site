@@ -22,7 +22,7 @@ export default function HeroSection({
   return (
     <section
       id="hero-section"
-      className="relative w-full min-h-[220vh] md:min-h-[160vh] -mt-40 flex items-center justify-center overflow-hidden"
+      className="relative w-full min-h-[190vh] md:min-h-[160vh] -mt-18 md:-mt-40 flex items-center justify-center overflow-hidden"
     >
       {/* Background - Vídeo, Imagem ou Gradiente */}
       <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 to-zinc-900">
