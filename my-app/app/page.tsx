@@ -15,8 +15,8 @@ export default function HomePage() {
         <div style={{ width: '100%', height: '100%', position: 'fixed' }}>
           <FloatingLines
             linesGradient={["#209784","#1b1d1c","#1f1414","#061a6a"]}
-            animationSpeed={1}
-            interactive
+            animationSpeed={0.2}
+            interactive={false}
             bendRadius={5}
             bendStrength={-0.5}
             mouseDamping={0.05}
