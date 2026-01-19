@@ -12,7 +12,7 @@ export default function VideoSection() {
   return (
     <section
       id="video-section"
-      className="w-full py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-zinc-900 to-black relative overflow-hidden"
+      className="w-full py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-transparent relative overflow-hidden"
     >
       {/* Efeitos de fundo animados */}
       <div className="absolute inset-0 opacity-20">

@@ -1,6 +1,7 @@
 import { ChevronsDown, Mail, Phone, MapPin, Github, Linkedin, Instagram, Facebook } from "lucide-react";
 import Link from "next/link";
 import Wrapper from "../wrapper";
+import LogoElevarDigital from "../Logo";
 
 export default function Footer() {
   const footerLinks = {
@@ -32,24 +33,14 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-gradient-to-br from-zinc-900 to-zinc-950 border-t border-white/10">
+    <footer className="w-full bg-gradient-to-br from-zinc-900 to-zinc-950 border-t border-white/10 z-10 ">
       <Wrapper>
         <div className="py-8 sm:py-12 md:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 md:gap-12 mb-6 sm:mb-8">
             {/* Logo e Descrição */}
             <div className="sm:col-span-2 lg:col-span-2">
               <div className="flex flex-row items-center text-shadow-lg font-sans select-none mb-3 sm:mb-4">
-                <div className="uppercase flex flex-col border-r border-white/20 mr-2 pr-2">
-                  <span className="flex items-center self-start text-lg sm:text-xl">
-                    Elevar
-                    <ChevronsDown
-                      className="text-green-400 rotate-225 self-end relative -top-3 right-0 w-3 h-3 sm:w-4 sm:h-4"
-                    />
-                  </span>
-                  <span className="flex items-center text-cyan-500 self-end text-[10px] sm:text-xs -mt-2">
-                    Digital
-                  </span>
-                </div>
+                <LogoElevarDigital />
               </div>
               <p className="text-white/70 text-xs sm:text-sm mb-3 sm:mb-4 max-w-md">
                 Transformando ideias em realidade digital. Soluções inovadoras que elevam seu
@@ -135,21 +126,21 @@ export default function Footer() {
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 flex-shrink-0" />
                 <div>
                   <p className="text-white/50 text-[10px] sm:text-xs uppercase">Email</p>
-                  <p className="text-white/80 text-xs sm:text-sm break-all">contato@elevardigital.com</p>
+                  <p className="text-white/80 text-xs sm:text-sm break-all">contato@elevardigital.com (nosso email ainda não está em vigor)</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-green-400 flex-shrink-0" />
                 <div>
                   <p className="text-white/50 text-[10px] sm:text-xs uppercase">Telefone</p>
-                  <p className="text-white/80 text-xs sm:text-sm">+55 (11) 9999-9999</p>
+                  <p className="text-white/80 text-xs sm:text-sm">+55 (31) 99109-7507                                                                                                                                             </p>
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 sm:col-span-2 lg:col-span-1">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 flex-shrink-0" />
                 <div>
                   <p className="text-white/50 text-[10px] sm:text-xs uppercase">Localização</p>
-                  <p className="text-white/80 text-xs sm:text-sm">São Paulo, Brasil</p>
+                  <p className="text-white/80 text-xs sm:text-sm">Betim, Minas Gerais, Brasil</p>
                 </div>
               </div>
             </div>

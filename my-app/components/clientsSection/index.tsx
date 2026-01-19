@@ -44,7 +44,7 @@ export default function ClientsSection() {
   return (
     <section
       id="clients-section"
-      className="w-full py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-zinc-800 to-zinc-900"
+      className="w-full py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-transparent relative overflow-hidden"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
@@ -86,48 +86,7 @@ export default function ClientsSection() {
           ))}
         </div>
 
-        {/* Estatísticas */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
-          <div
-            className="flex flex-col items-center rounded-xl sm:rounded-2xl p-6 sm:p-8 backdrop-blur border border-white/10
-              bg-gradient-to-br from-black/10 to-white/10
-              shadow-lg transition-all ease-in-out hover:border-b-green-500 hover:shadow-green-500/10 text-center
-              hover:-translate-y-1"
-          >
-            <div className="p-3 sm:p-4 rounded-full backdrop-blur-md bg-green-500/10 border border-green-500/20 mb-3 sm:mb-4">
-              <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-green-400" />
-            </div>
-            <h3 className="uppercase text-shadow-lg font-bold text-3xl sm:text-4xl md:text-5xl mb-2 text-white">500+</h3>
-            <p className="text-white/70 text-xs sm:text-sm md:text-base">Projetos Entregues</p>
-          </div>
-
-          <div
-            className="flex flex-col items-center rounded-xl sm:rounded-2xl p-6 sm:p-8 backdrop-blur border border-white/10
-              bg-gradient-to-br from-black/10 to-white/10
-              shadow-lg transition-all ease-in-out hover:border-b-cyan-500 hover:shadow-cyan-500/10 text-center
-              hover:-translate-y-1"
-          >
-            <div className="p-3 sm:p-4 rounded-full backdrop-blur-md bg-cyan-500/10 border border-cyan-500/20 mb-3 sm:mb-4">
-              <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-cyan-400" />
-            </div>
-            <h3 className="uppercase text-shadow-lg font-bold text-3xl sm:text-4xl md:text-5xl mb-2 text-white">200+</h3>
-            <p className="text-white/70 text-xs sm:text-sm md:text-base">Clientes Satisfeitos</p>
-          </div>
-
-          <div
-            className="flex flex-col items-center rounded-xl sm:rounded-2xl p-6 sm:p-8 backdrop-blur border border-white/10
-              bg-gradient-to-br from-black/10 to-white/10
-              shadow-lg transition-all ease-in-out hover:border-b-green-500 hover:shadow-green-500/10 text-center
-              hover:-translate-y-1"
-          >
-            <div className="p-3 sm:p-4 rounded-full backdrop-blur-md bg-green-500/10 border border-green-500/20 mb-3 sm:mb-4">
-              <Award className="w-6 h-6 sm:w-8 sm:h-8 text-green-400" />
-            </div>
-            <h3 className="uppercase text-shadow-lg font-bold text-3xl sm:text-4xl md:text-5xl mb-2 text-white">98%</h3>
-            <p className="text-white/70 text-xs sm:text-sm md:text-base">Taxa de Satisfação</p>
-          </div>
-        </div>
-
+      
         {/* CTA Final */}
         <div className="text-center">
           <div className="inline-flex flex-col items-center gap-3 sm:gap-4 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl backdrop-blur border border-cyan-500/20

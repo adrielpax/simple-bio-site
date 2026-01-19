@@ -43,7 +43,7 @@ export default function ContactFormSection() {
         {/* Card destacado com gradiente */}
         <div
           className="rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-12 border border-white/20
-            bg-gradient-to-br from-zinc-900/95 via-zinc-800/95 to-zinc-900/95
+            bg-transparent
             backdrop-blur-xl shadow-2xl
             relative overflow-hidden"
         >
@@ -171,7 +171,7 @@ export default function ContactFormSection() {
                       bg-gradient-to-r from-cyan-400 to-green-400 w-full
                       font-bold hover:scale-105 active:scale-95 hover:border-b-white transition-all ease-in-out
                       shadow-lg hover:shadow-green-500/60 active:bg-cyan-500 flex items-center gap-2 justify-center mt-2
-                      text-gray-900 text-sm sm:text-base"
+                      text-gray-200 text-sm sm:text-base"
                   >
                     Solicitar Proposta Gratuita
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />

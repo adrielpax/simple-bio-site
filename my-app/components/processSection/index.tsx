@@ -60,7 +60,7 @@ export default function ProcessSection() {
   return (
     <section
       id="process-section"
-      className="w-full py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-zinc-800 to-zinc-900 relative overflow-hidden"
+      className="w-full py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-transparent relative overflow-hidden"
     >
       {/* Decoração de fundo */}
       <div className="absolute inset-0 opacity-10">

@@ -1,9 +1,11 @@
 "use client";
 
-import { ChevronsDown, Menu, X, LogIn } from "lucide-react";
+import { ChevronsDown, Menu, X, LogIn, ChevronsUp } from "lucide-react";
 import Wrapper from "../wrapper";
 import Link from "next/link";
 import { useState } from "react";
+import { TbArrowBadgeUpFilled } from "react-icons/tb";
+import LogoElevarDigital from "@/components/Logo"
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,34 +17,13 @@ export default function Navbar() {
     { href: "#clients-section", label: "Clientes" },
   ];
 
-    return (
-    <nav className="w-full bg-black/40 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
-            <Wrapper>
-        <div className="flex flex-row gap-2 sm:gap-4 justify-between items-center py-2 sm:py-3">
+  return (
+    <nav className="w-full bg-gradient-to-br from-zinc-400/20 to-zinc-600/20 backdrop-blur-md sticky top-0 z-50 border-b border-black/10">
+      <Wrapper>
+        <div className="flex rounded px-4 py-1 bg-gradient-to-bl from-zinc-600/70 to-zinc-700/70 flex-row gap-2 sm:gap-4 justify-between  items-center py-2 sm:py-3">
           {/* Logo - mantido intacto */}
-                    <div className="flex flex-row items-center text-shadow-lg font-sans select-none">
-                        <div className="uppercase flex flex-col border-r border-white/20 mr-2 pr-2">
-                        <span className="flex items-center self-start text-lg sm:text-xl">
-                            Elevar
-                <ChevronsDown
-                  className="text-green-400 rotate-225 self-end relative -top-3 right-0 w-3 h-3 sm:w-4 sm:h-4"
-                            />
-                        </span>
-                        <span className="flex items-center text-cyan-500 self-end text-[10px] sm:text-xs -mt-2">
-                            Digital
-                        </span>
-                        </div>
-            <div className="hidden sm:flex flex-col text-xs">
-                            <span className="text-xs text-white/40">made by :</span>
-              <Link
-                href={"https://adrieldev.vercel.app/"}
-                className="hover:text-cyan-500 transition-colors"
-              >
-                Adrieldev
-              </Link>
-            </div>
-                        </div>
-                        
+          <LogoElevarDigital/>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4 lg:gap-6">
             {navLinks.map((link) => (
@@ -64,9 +45,9 @@ export default function Navbar() {
                 transition-all text-sm font-medium"
             >
               <LogIn className="w-4 h-4" />
-              Entrar
+              Entrar / Registrar
             </Link>
-                    </div>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -106,7 +87,7 @@ export default function Navbar() {
                   transition-all text-sm font-medium mt-1"
               >
                 <LogIn className="w-4 h-4" />
-                Entrar
+                Entrar / Registrar
               </Link>
             </div>
           </div>

@@ -6,6 +6,7 @@ import { LogIn, Mail, Lock, AlertCircle } from "lucide-react";
 import Link from "next/link";
 import { supabase } from "@/app/lib/supabase";
 import { loginSchema, type LoginData } from "@/app/lib/validations";
+import LogoElevarDigital from "@/components/Logo";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -72,13 +73,14 @@ export default function LoginPage() {
           
           {/* Logo/Header */}
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl
-              bg-gradient-to-r from-cyan-400 to-green-400 mb-4">
-              <LogIn className="w-8 h-8 text-gray-900" />
+            <div className="w-full h-auto mx-auto text-white self-center">
+
+            <LogoElevarDigital/>
             </div>
-            <h1 className="text-3xl font-bold text-white mb-2">Login</h1>
-            <p className="text-white/70 text-sm">Acesse sua conta para continuar</p>
+           
           </div>
+            <h1 className="text-3xl font-bold text-white mb-2">Login</h1>
+            <p className="mb-6 text-white/70 text-sm">Acesse sua conta para continuar</p>
 
           {/* Erro geral */}
           {error && (
